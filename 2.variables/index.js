@@ -15,3 +15,4 @@ console.log(edadalumno); // Imprime el valor de la variable en la consola
 console.log(PI); // Imprime el valor de la constante en la consola
 
 //solo se usara let cuando creamos la variable si deceamos modificar el valor o llamar a la variable solo usaremos el nombre 
+

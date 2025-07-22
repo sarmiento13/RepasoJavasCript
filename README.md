@@ -47,43 +47,57 @@
 - Evita `var` en código moderno.
  `let`,`var` ambos 
  ## 3. Operadores
- ## 4. Funciones 
- ## 5. Metodos para trabajar con datos estructurados 
+ su clasificasion general se divide en tres 
+ 1. **operadores unarios**
+    los operadores unarios son aquellos que tiene el operador a la izquierda del valor y que retornan un nuevo valor 
+    - operador de negacion 
+ 2. **operadores binarios** 
+    los operadores binarios son aquellos que estan medio de dos valores que retornan un unico valor 
+    - operadores aritmeticos
+    - operadores comparacion 
+    - operadores logicos 
+ 3. **operadores ternario**
+    los operadores ternario son aquellos que evaluan tre valores y que retornan un solo valor 
+    - operador condicional 
+ ## 4. Contoroles de flujo 
+ ## 5. Funciones 
+ ## 6. Metodos para trabajar con datos estructurados 
  Son acciones o funciones que nos permiten:
 
-### acceder
-Permite obtener un valor de un array u objeto.
-```javascript
-let numeros = [10, 20, 30];
-let persona = { nombre: "Ana", edad: 25 };
+ ### acceder
+  Permite obtener un valor de un array u objeto.
+  ```javascript
+  let numeros = [10, 20, 30];
+  let persona = { nombre: "Ana", edad: 25 };
 
-console.log(numeros[1]);      // 20
-console.log(persona.nombre);  // "Ana"
-```
+  console.log(numeros[1]);      // 20
+  console.log(persona.nombre);  // "Ana"
+  ```
 
-### modificar
-Permite cambiar el valor de un elemento existente.
-```javascript
-numeros[0] = 100;         // [100, 20, 30]
-persona.edad = 26;        // { nombre: "Ana", edad: 26 }
-```
+ ### modificar
+  Permite cambiar el valor de un elemento existente.
+  ```javascript
+  numeros[0] = 100;         // [100, 20, 30]
+  persona.edad = 26;        // { nombre: "Ana", edad: 26 }
+  ```
 
-### insertar
-Agrega nuevos elementos o propiedades.
-```javascript
-numeros.push(40);         // [100, 20, 30, 40]
-persona.ciudad = "Lima";  // { nombre: "Ana", edad: 26, ciudad: "Lima" }
-```
+ ### insertar
+  Agrega nuevos elementos o propiedades.
+  ```javascript
+  numeros.push(40);         // [100, 20, 30, 40]
+  persona.ciudad = "Lima";  // { nombre: "Ana", edad: 26, ciudad: "Lima" }
+  ```
 
-### eliminar
-Quita elementos o propiedades.
-```javascript
-numeros.pop();            // [100, 20, 30]
-delete persona.edad;      // { nombre: "Ana", ciudad: "Lima" }
-```
+ ### eliminar
+  Quita elementos o propiedades.
+  ```javascript
+  numeros.pop();            // [100, 20, 30]
+  delete persona.edad;      // { nombre: "Ana", ciudad: "Lima" }
+  ```
 
-### ordenar
-Organiza los elementos de un array.
-```javascript
-numeros.sort();           // [20, 30, 100]
-```
+ | 1e2n y 3### ordenar
+  Organiza los elementos de un array.
+  ```javascript
+  numeros.sort();           // [20, 30, 100]
+  ```
+  ## 7. Dom
