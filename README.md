@@ -60,6 +60,50 @@
     los operadores ternario son aquellos que evaluan tre valores y que retornan un solo valor 
     - operador condicional 
  ## 4. Contoroles de flujo 
+ nuestros progrmas en javascript contienen mas de una sentencia y las centencias son ejecutadas una a una como si fuera una histroria, de arriba hacia abajo como un camino recto 
+ ### 1. control de decision (if-else)
+ ##### falta llenar
+ ### 2. bucles (for)
+ El **bucle for** se utiliza para repetir un bloque de código un número determinado de veces. Es ideal cuando sabes cuántas veces quieres que se repita la acción.
+
+ **Estructura básica:**
+```javascript
+for (inicialización; condición; incremento) {
+  // Código a ejecutar en cada iteración
+}
+```
+
+**Ejemplo:**
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log("Iteración número: " + i);
+}
+```
+*Resumen:*  
+El bucle for inicia una variable, verifica una condición en cada vuelta y la incrementa o modifica al final de cada iteración. El ciclo se repite mientras la condición sea verdadera.
+ ### 3. bocles (while)
+ ### 3. Bucles (while)
+
+El **bucle while** se utiliza para repetir un bloque de código mientras una condición sea verdadera. Es útil cuando no sabes cuántas veces se repetirá la acción, solo que debe continuar mientras la condición se cumpla.
+
+**Estructura básica:**
+```javascript
+while (condición) {
+  // Código a ejecutar en cada iteración
+}
+```
+
+**Ejemplo:**
+```javascript
+let contador = 0;
+while (contador < 3) {
+  console.log("Contador: " + contador);
+  contador++;
+}
+```
+*Resumen:*  
+El bucle while evalúa la condición antes de cada iteración. Si la condición es verdadera, ejecuta el bloque de código; si es falsa,
+
  ## 5. Funciones 
  ## 6. Metodos para trabajar con datos estructurados 
  Son acciones o funciones que nos permiten:
