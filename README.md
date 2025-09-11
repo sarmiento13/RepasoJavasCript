@@ -105,9 +105,74 @@ while (contador < 3) {
 El bucle while evalúa la condición antes de cada iteración. Si la condición es verdadera, ejecuta el bloque de código; si es falsa,
 
  ## 5. Funciones 
- ## 6. Metodos para trabajar con datos estructurados 
- Son acciones o funciones que nos permiten:
+ ### 1. Función por declaración
+Se define usando la palabra clave `function` y un nombre.  
+Puede ser llamada antes o después de su declaración.
+```javascript
+function saludar() {
+  return "Hola";
+}
+console.log(saludar());
+```
 
+### 2. Función por expresión
+Se asigna una función anónima a una variable.  
+Solo puede ser llamada después de su definición.
+```javascript
+const sumar = function(a, b) {
+  return a + b;
+};
+console.log(sumar(2, 3));
+```
+
+### 3. Función flecha (arrow function)
+Sintaxis más corta y moderna, introducida en ES6.  
+No tiene su propio `this`.
+```javascript
+const multiplicar = (a, b) => a * b;
+console.log(multiplicar(2, 4));
+```
+ ## 6. Metodos para trabajar con datos estructurados
+ los metodos son funciones que dan funcionalidad extras a los tipos de datos en los cuales se aplica, un metodo es anteseciado por un tipo de dato y un punto 
+ **ejemplo**
+ el ejemplo mas claro de un metodo es el lenth - este metodo nos permite o nos retorna la cantidad de caractere un string o la cantidad de eelemntos  de una lista.
+   ```js
+   "hola".length //4
+  [2,5,4,6,7].length //5
+  ```
+  > [!TIP] los metodos en su mayoria solo se aplican a tipo de datos string ,listas y objetos, en su gran parte son aplicados para listas
+  ### 6.1. metododos para string - cadenas de texto
+  ### length 
+  devuelve la longitud de una cadena 
+  ```js
+  let mensaje="hola como estan"
+  console.log(mensaje.lenght)
+  //retorna -> 15
+  ``` 
+  ### toLowerCase
+  devuelve una cadena en minusculas 
+  ```js
+  let texto="hola"
+  consolo log(texto.toUpperCase())
+  // retorna -> holka
+  ``` 
+  ### toUpperCase 
+  devuelve una cadena en mayuscula 
+  ```js
+  let texto="HOLA"
+  consolo log(texto.toUpperCase())
+  // retorna -> HOLA
+  ``` 
+  #### concat
+  El método **concat** se utiliza para unir dos o más cadenas de texto (strings) o listas (arrays) y devuelve una nueva sin modificar las originales.
+  ```javascript
+  let saludo = "Hola";
+  let nombre = "Willian";
+  let mensaje = saludo.concat(" ", nombre, "!");
+  console.log(mensaje); // "Hola Willian!"
+  ```
+  ### 6.2. Metodo para listas - Arrays
+ Son acciones o funciones que nos permiten:
  ### acceder
   Permite obtener un valor de un array u objeto.
   ```javascript
@@ -145,3 +210,5 @@ El bucle while evalúa la condición antes de cada iteración. Si la condición 
   numeros.sort();           // [20, 30, 100]
   ```
   ## 7. Dom
+
+  
