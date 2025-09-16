@@ -171,6 +171,43 @@ console.log(multiplicar(2, 4));
   let mensaje = saludo.concat(" ", nombre, "!");
   console.log(mensaje); // "Hola Willian!"
   ```
+  #### trim 
+  El método **trim()** se utiliza en JavaScript para eliminar los espacios en blanco al inicio y al final de una cadena de texto (string).  
+  No modifica la cadena original, sino que devuelve una nueva sin esos espacios.
+  **Ejemplo:**
+  ```javascript
+  let texto = "   Hola mundo   ";
+  let resultado = texto.trim();
+  console.log(resultado); // "Hola mundo"
+  ```
+  #### slice - corte 
+  El método **slice()** se utiliza para extraer una parte de una cadena de texto (string) o de un array, y devuelve una nueva sin modificar la original.
+
+  **En strings:**
+  ```javascript
+  let texto = "JavaScript";
+  let subcadena = texto.slice(4, 10);
+  console.log(subcadena); // "Script"
+  ```
+
+  **En arrays:**
+  ```javascript
+  let numeros = [10, 20, 30, 40, 50];
+  let subarray = numeros.slice(1, 4);
+  console.log(subarray); // [20, 30, 40]
+  ```
+  #### split - divide
+  El método **split()** se utiliza en JavaScript para dividir una cadena de texto (string) en un array de subcadenas, usando un separador que tú indicas.
+  **Ejemplo:**
+  ```javascript
+  let texto = "manzana,pera,uva";
+  let frutas = texto.split(",");
+  console.log(frutas); // ["manzana", "pera", "uva"]
+  ```
+  *Resumen:*  
+  `split()` convierte un string en un array, separando por el carácter o texto que le indiques.
+  ####
+
   ### 6.2. Metodo para listas - Arrays
  Son acciones o funciones que nos permiten:
  ### acceder
@@ -209,6 +246,7 @@ console.log(multiplicar(2, 4));
   ```javascript
   numeros.sort();           // [20, 30, 100]
   ```
-  ## 7. Dom
+  ## 7. es6 
+  ## 8. Dom
 
   
